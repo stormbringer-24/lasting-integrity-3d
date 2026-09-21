@@ -40,14 +40,21 @@ LastingIntegrity/
 ├── include/
 │   └── Shader.hpp
 ├── src/
-│   └── main.cpp              # Entry point & render loop
+│   ├── main.cpp              # Entry point & render loop
+│   └── stb_image.h
 ├── shaders/
 │   ├── vertex_shader.glsl
 │   ├── fragment_shader.glsl
+│   ├── sky_vertex.glsl
+│   ├── sky_fragment.glsl
 │   ├── tower_vertex.glsl
-│   └── tower_fragment.glsl
+│   ├── tower_fragment.glsl
+│   ├── spren_vertex.glsl
+│   └── spren_fragment.glsl
+├── textures/
 ├── docs/
 │   └── preview.gif
+├── CMakeLists.txt
 └── README.md
 ```
 
