@@ -60,11 +60,14 @@ brew install glfw glew glm
 
 ```bash
 clang++ -std=c++17 src/main.cpp -o LastingIntegrity \
+  -Iinclude \
   -I/opt/homebrew/opt/glew/include \
   -I/opt/homebrew/opt/glfw/include \
+  -I/opt/homebrew/opt/glm/include \
   -L/opt/homebrew/opt/glew/lib -lGLEW \
   -L/opt/homebrew/opt/glfw/lib -lglfw \
   -framework OpenGL -framework Cocoa -framework IOKit -framework CoreVideo
+
 ```
 
 **Run** (from the project root, so the shaders are found):
