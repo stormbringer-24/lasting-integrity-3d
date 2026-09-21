@@ -1,4 +1,3 @@
-
 <h1 align="center">Lasting Integrity</h1>
 <p align="center">3D OpenGL rendering engine in C++17</p>
 
@@ -12,14 +11,14 @@
   <img src="docs/preview.gif" alt="Preview" width="720" />
 </p>
 
-A 3D graphics application built with modern OpenGL 4.1 (core profile). It features a free camera, a custom GLSL shader pipeline, lighting, and procedural mesh rendering.
+A 3D graphics application built with modern OpenGL 4.1 (core profile). It features a custom GLSL shader pipeline, animated lighting, and procedural mesh rendering.
 
 Inspired by the ethereal landscape of *Shadesmar* and the fortress of *Lasting Integrity*.
 
 ## Features
 
 - **Custom shader pipeline:** a `Shader` class that reads, compiles, links, and error-checks vertex and fragment shaders at runtime.
-- **MVP transformations:** Model/View/Projection matrices with GLM, perspective projection, camera movement.
+- **MVP transformations:** Model/View/Projection matrices with GLM and perspective projection.
 - **Animated lighting:** `u_time` and `viewPos` uniforms updated every frame.
 - **Manual buffer management:** VAO/VBO setup and attribute pointers.
 
@@ -38,6 +37,8 @@ Inspired by the ethereal landscape of *Shadesmar* and the fortress of *Lasting I
 
 ```text
 LastingIntegrity/
+├── include/
+│   └── Shader.hpp
 ├── src/
 │   └── main.cpp              # Entry point & render loop
 ├── shaders/
@@ -45,6 +46,8 @@ LastingIntegrity/
 │   ├── fragment_shader.glsl
 │   ├── tower_vertex.glsl
 │   └── tower_fragment.glsl
+├── docs/
+│   └── preview.gif
 └── README.md
 ```
 
@@ -67,7 +70,6 @@ clang++ -std=c++17 src/main.cpp -o LastingIntegrity \
   -L/opt/homebrew/opt/glew/lib -lGLEW \
   -L/opt/homebrew/opt/glfw/lib -lglfw \
   -framework OpenGL -framework Cocoa -framework IOKit -framework CoreVideo
-
 ```
 
 **Run** (from the project root, so the shaders are found):
@@ -75,5 +77,3 @@ clang++ -std=c++17 src/main.cpp -o LastingIntegrity \
 ```bash
 ./LastingIntegrity
 ```
-
-

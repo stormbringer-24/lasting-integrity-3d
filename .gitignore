@@ -10,6 +10,7 @@ build/
 *.out
 *.app
 LastingIntegrity
+._*
 
 # IDE / Editors
 .vscode/
