@@ -1,0 +1,18 @@
+# macOS system files
+.DS_Store
+AppleDouble
+.LSOverride
+
+# Build and Executables
+bin/
+build/
+*.o
+*.out
+*.app
+LastingIntegrity
+
+# IDE / Editors
+.vscode/
+.idea/
+*.xcodeproj/
+*.xcworkspace/

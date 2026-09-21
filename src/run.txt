@@ -1,0 +1,7 @@
+g++ -std=c++11 src/main.cpp -o Lasting_Integrity \
+-Iinclude -I/opt/homebrew/include \
+-L/opt/homebrew/lib \
+-lGLEW -lglfw \
+-framework OpenGL -framework Cocoa -framework IOKit -framework CoreVideo
+./Lasting_Integrity
+Lasting_Integrity
